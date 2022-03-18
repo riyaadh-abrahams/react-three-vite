@@ -21,6 +21,6 @@ void main() {
 
  //Final Color
   vec3 finalColor = color  - abs(snoise(uv + time));
-  finalColor = finalColor * (strength2 * strength * strength3 * strength4);
+  finalColor = finalColor; 
   gl_FragColor = vec4(finalColor, 1.0);
 }
